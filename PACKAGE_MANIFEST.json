@@ -1,0 +1,106 @@
+{
+  "manifest_version": "1.0.0",
+  "package": "claude-code-control",
+  "inventory_excludes": [
+    "PACKAGE_MANIFEST.json"
+  ],
+  "file_count": 16,
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1062,
+      "mode": "0664",
+      "sha256": "1680846400ddb3ade6e714077656b35fbcabfd34628e3520cb975c00c9dd6547"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3399,
+      "mode": "0664",
+      "sha256": "16735cb950a593e09d14977a60cd200993b0a7b35e9eef17a3c6936f5dd3e9b0"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 18592,
+      "mode": "0644",
+      "sha256": "834c65be87f91db4ccbdaa7a89fc25d1a5265445233869971c13afe7235118d6"
+    },
+    {
+      "path": "references/batch-collection-pattern.md",
+      "bytes": 2879,
+      "mode": "0644",
+      "sha256": "602bdaf88879692130d294bf91241fe0c4f0092cef4e24fe6ff2c9a52666cba0"
+    },
+    {
+      "path": "references/common-rules.md",
+      "bytes": 10318,
+      "mode": "0644",
+      "sha256": "ca3b3ace6e7cf0eb741cb6f1104b46c1869cd4de36a9e397affe9fc3fc902e7e"
+    },
+    {
+      "path": "references/delegation-triage-gate.md",
+      "bytes": 3329,
+      "mode": "0644",
+      "sha256": "f09b98aa0a595087186cf9880e6a42c49cbbdb31b3ebf1c1deb819b99402450b"
+    },
+    {
+      "path": "references/e2e-lessons-learned.md",
+      "bytes": 8853,
+      "mode": "0644",
+      "sha256": "f515b58b8e8836b2c44c04205574d2dbb08d21326b8e606b0f95b7b2a5fb5405"
+    },
+    {
+      "path": "references/failure-codes.md",
+      "bytes": 3937,
+      "mode": "0644",
+      "sha256": "4672c1b45cd265cb051c8d266123a5917374d1e46b1bb51fb2e2d8780b07e4d0"
+    },
+    {
+      "path": "references/gateway-latency-diagnosis.md",
+      "bytes": 2901,
+      "mode": "0644",
+      "sha256": "e1ecb1599a64dd14870269623383de873c26d11e8f765b744f009102ec092933"
+    },
+    {
+      "path": "references/primary-fallback-policy.md",
+      "bytes": 4618,
+      "mode": "0644",
+      "sha256": "545b4f60585847fc9193569925bccda948af40893f3c0c5474cf89c70ead1510"
+    },
+    {
+      "path": "references/turn-budget-grades.md",
+      "bytes": 7912,
+      "mode": "0644",
+      "sha256": "535038b65bbd62ecdf8cdc1a82aae07248d756ef291029c2affa7dfd276a6c52"
+    },
+    {
+      "path": "scripts/card_drift_check.py",
+      "bytes": 3878,
+      "mode": "0755",
+      "sha256": "f06fd852e355376e3b72c86e3672b0d7f5bcfa938463fc356f6687c2eb84a475"
+    },
+    {
+      "path": "scripts/parse_claude_json.py",
+      "bytes": 2825,
+      "mode": "0755",
+      "sha256": "9ac3e994b840b0a8269387dbdf552492efcc08bed306ffce60bf1d6633d9784a"
+    },
+    {
+      "path": "scripts/preflight_claude_auth.sh",
+      "bytes": 2815,
+      "mode": "0755",
+      "sha256": "158a2240aef99f4e4f61075a3d7f2d93ae40896998c46d245715de80410f59c5"
+    },
+    {
+      "path": "scripts/test_claude_control_scripts.py",
+      "bytes": 7002,
+      "mode": "0755",
+      "sha256": "4d5e07d36059d3405aa1e898337a96ffbf7cfb073a4af352d1b39382aa42282d"
+    },
+    {
+      "path": "scripts/verify_server.sh",
+      "bytes": 2613,
+      "mode": "0755",
+      "sha256": "07b2c47401720e3cfe54f059734462cd80b62cce0e41c523f9544083e3172772"
+    }
+  ]
+}
