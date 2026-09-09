@@ -1,0 +1,88 @@
+{
+  "manifest_version": "1.0.0",
+  "package": "codex-cli-control",
+  "inventory_excludes": [
+    "PACKAGE_MANIFEST.json"
+  ],
+  "file_count": 13,
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1062,
+      "mode": "0664",
+      "sha256": "1680846400ddb3ade6e714077656b35fbcabfd34628e3520cb975c00c9dd6547"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3361,
+      "mode": "0664",
+      "sha256": "444f64ed3378b3b93fe760abaf9da4c834d67ce6b08f19c37636c732b45144a1"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 17160,
+      "mode": "0644",
+      "sha256": "2e4cfd04d766361ac62793481422bd5a0de689132a37ae021a54f0d397634161"
+    },
+    {
+      "path": "references/common-rules.md",
+      "bytes": 10318,
+      "mode": "0644",
+      "sha256": "ca3b3ace6e7cf0eb741cb6f1104b46c1869cd4de36a9e397affe9fc3fc902e7e"
+    },
+    {
+      "path": "references/delegation-triage-gate.md",
+      "bytes": 3389,
+      "mode": "0644",
+      "sha256": "94d9e919b0b2d83f8a5aafb7bd23087e376d0fb9157381d920e97a0f098d7749"
+    },
+    {
+      "path": "references/failure-codes.md",
+      "bytes": 4632,
+      "mode": "0644",
+      "sha256": "541819d41d35cf9fa387682f6ecb68f7c519dd0bc6f4e4081920400e82e9dc55"
+    },
+    {
+      "path": "references/primary-fallback-policy.md",
+      "bytes": 3990,
+      "mode": "0644",
+      "sha256": "9b7655571beca6ac38e957c17b587f9192912f5d44515011f6589ef5cf930207"
+    },
+    {
+      "path": "references/timeout-budget-grades.md",
+      "bytes": 7494,
+      "mode": "0644",
+      "sha256": "2e484f2eb078fed5f0bbeef4001ab736e26c1181d65fafa5489166468d0322d5"
+    },
+    {
+      "path": "scripts/card_drift_check.py",
+      "bytes": 3878,
+      "mode": "0755",
+      "sha256": "f06fd852e355376e3b72c86e3672b0d7f5bcfa938463fc356f6687c2eb84a475"
+    },
+    {
+      "path": "scripts/parse_codex_output.py",
+      "bytes": 2827,
+      "mode": "0755",
+      "sha256": "ed8606741186570b56d97344e119aa96ebd31be1693e168f2f899af06b5313bf"
+    },
+    {
+      "path": "scripts/preflight_codex_home.sh",
+      "bytes": 1869,
+      "mode": "0755",
+      "sha256": "5d98152561ad20b8d8ffe49e8c86d7b308453824c2f816808b5283b4c7b3f3ed"
+    },
+    {
+      "path": "scripts/test_codex_control_scripts.py",
+      "bytes": 5347,
+      "mode": "0755",
+      "sha256": "c3d18a9c346bbde2a2b70c9285b21f6e8b9a915f817d703a06452e70e76285fd"
+    },
+    {
+      "path": "scripts/verify_artifacts.sh",
+      "bytes": 1666,
+      "mode": "0755",
+      "sha256": "8e1be1d69f94b2690359cf54910d9a20ae58a81033a688a5d072e208b012adc2"
+    }
+  ]
+}
