@@ -2,9 +2,12 @@
   "manifest_version": "1.0.0",
   "package": "codex-cli-control",
   "inventory_excludes": [
-    "PACKAGE_MANIFEST.json"
+    "PACKAGE_MANIFEST.json",
+    ".git/",
+    "__pycache__/",
+    ".pytest_cache/"
   ],
-  "file_count": 13,
+  "file_count": 15,
   "files": [
     {
       "path": "LICENSE",
@@ -14,15 +17,27 @@
     },
     {
       "path": "README.md",
-      "bytes": 3361,
+      "bytes": 18791,
       "mode": "0664",
-      "sha256": "444f64ed3378b3b93fe760abaf9da4c834d67ce6b08f19c37636c732b45144a1"
+      "sha256": "f358bf453452b07deb1b3ee18634b01d58f58037356d369f806e61f7689af0de"
     },
     {
       "path": "SKILL.md",
       "bytes": 17160,
       "mode": "0644",
       "sha256": "2e4cfd04d766361ac62793481422bd5a0de689132a37ae021a54f0d397634161"
+    },
+    {
+      "path": "assets/orchestrator-worker.svg",
+      "bytes": 3755,
+      "mode": "0664",
+      "sha256": "0d04df2c7f6fb0bf698338d0d5b741f90d4638b7fb08fe4a7663aee567bfa9e7"
+    },
+    {
+      "path": "assets/task-budget.svg",
+      "bytes": 3941,
+      "mode": "0664",
+      "sha256": "4fa84703caf0c69b4aabc50419a7ce5fcd272127a17ceb746e3b8bd3b402e665"
     },
     {
       "path": "references/common-rules.md",

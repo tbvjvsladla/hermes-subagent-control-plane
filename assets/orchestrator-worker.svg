@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660" viewBox="0 0 1440 660" role="img" aria-labelledby="title desc">
+<title id="title">Codex CLI 오케스트레이터–워커 패턴</title><desc id="desc">사용자 승인 후 Hermes가 카드와 인증을 확인하고 타깃 프로젝트의 기존 외부 CLI 하네스를 호출한다. 워커는 프로젝트 지침·도구·환경에 결합되어 있다. Hermes가 결과를 독립 검증한다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1f3864"/></marker></defs>
+<rect width="1440" height="660" fill="#f0f0e3"/>
+<g font-family="Noto Sans CJK KR, Noto Sans KR, Malgun Gothic, Apple SD Gothic Neo, sans-serif" fill="#1f3864" text-anchor="middle">
+<text x="720" y="52" font-size="32">모델을 바꾸는 것이 아니라, 기존 워커 하네스를 호출합니다</text>
+<rect x="40" y="190" width="220" height="130" rx="65" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="150" y="241" font-size="30">사용자</text>
+<text x="150" y="282" font-size="25">범위 · 승인</text>
+<rect x="330" y="160" width="350" height="210" rx="12" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="505" y="208" font-size="28">Hermes · 오케스트레이터</text>
+<text x="505" y="250" font-size="25">카드 확인 → 인증 → 예산</text>
+<text x="505" y="290" font-size="23">제어 스킬은 여기에 등록</text>
+<text x="505" y="334" font-size="25">호출 뒤 결과 독립 검증</text>
+<rect x="860" y="105" width="535" height="430" rx="18" fill="#e8edf3" stroke="#1f3864" stroke-width="3"/>
+<text x="1127" y="147" font-size="29">타깃 프로젝트 폴더</text>
+<rect x="895" y="183" width="465" height="125" rx="12" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="1127" y="228" font-size="30">Codex CLI · 기존 워커</text>
+<text x="1127" y="272" font-size="27">codex exec</text>
+<rect x="895" y="347" width="140" height="118" rx="8" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="965" y="392" font-size="27">지침</text>
+<text x="965" y="433" font-size="22">context</text>
+<rect x="1055" y="347" width="140" height="118" rx="8" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="1125" y="392" font-size="27">도구</text>
+<text x="1125" y="433" font-size="22">skills</text>
+<rect x="1215" y="347" width="145" height="118" rx="8" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="1287" y="392" font-size="27">환경</text>
+<text x="1287" y="433" font-size="22">runtime</text>
+<text x="1127" y="506" font-size="23">agent-card.json · 호출과 검증 계약</text>
+<path d="M260 255H330" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M680 220H895" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="786" y="191" font-size="22">실제 CLI 호출</text>
+<path d="M1127 308V347" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M895 300H720V430H680" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<polygon points="370,410 680,410 650,500 340,500" fill="#fdfcf7" stroke="#c55a11" stroke-width="3"/>
+<text x="510" y="448" font-size="28">회신 + 산출물</text>
+<text x="510" y="482" font-size="23">카드 검증과 대조</text>
+<path d="M505 410V370" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="720" y="595" font-size="30">등록 ≠ 연결 성공 ≠ 작업 완료</text>
+<text x="720" y="633" font-size="23">A2A 개념 차용 · 전체 표준 구현 아님 · 조용한 직접 실행 대체 금지</text>
+</g></svg>
