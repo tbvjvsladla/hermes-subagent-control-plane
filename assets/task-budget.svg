@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660" viewBox="0 0 1440 660" role="img" aria-labelledby="title desc">
+<title id="title">Claude Code 작업 난이도와 예산 운영 루프</title><desc id="desc">범위와 예산을 분리한다. 워커 난이도 추천을 Hermes가 재평가해 예산을 배분한다. 실제 실행 후 사용량과 결과를 기록하고 원인을 진단한다. 승인을 거친 새 시도만 조정하며 자동 최적화는 구현하지 않았다.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1f3864"/></marker></defs>
+<rect width="1440" height="660" fill="#f0f0e3"/>
+<g font-family="Noto Sans CJK KR, Noto Sans KR, Malgun Gothic, Apple SD Gothic Neo, sans-serif" fill="#1f3864" text-anchor="middle">
+<text x="720" y="52" font-size="32">작업 범위와 완수 예산은 서로 다른 축입니다</text>
+<rect x="45" y="95" width="650" height="84" rx="12" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="370" y="129" font-size="27">범위 · 무엇을 맡길까?</text>
+<text x="370" y="162" font-size="23">이질적인 작업은 분리 · 연결된 추론은 맥락 유지</text>
+<rect x="745" y="95" width="650" height="84" rx="12" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="1070" y="129" font-size="27">예산 · 끝내려면 얼마나 필요할까?</text>
+<text x="1070" y="162" font-size="24">max-turns + 시간 감시</text>
+<rect x="45" y="240" width="285" height="130" rx="16" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="187" y="285" font-size="29">워커 추천</text>
+<text x="187" y="329" font-size="21">S · L0~L4</text>
+<path d="M330 305H400" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="400" y="240" width="285" height="130" rx="16" fill="#e8edf3" stroke="#1f3864" stroke-width="3"/>
+<text x="542" y="285" font-size="29">Hermes 판단</text>
+<text x="542" y="329" font-size="21">추천 재평가</text>
+<path d="M685 305H755" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="755" y="240" width="285" height="130" rx="16" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="897" y="285" font-size="29">예산 배분</text>
+<text x="897" y="329" font-size="21">max-turns + 시간 감시</text>
+<path d="M1040 305H1110" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1110" y="240" width="285" height="130" rx="16" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="1252" y="285" font-size="29">실행 · 실측</text>
+<text x="1252" y="329" font-size="21">num_turns · 결과 JSON</text>
+<path d="M1252 370V460H1050" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<polygon points="740,410 1060,410 1030,510 710,510" fill="#fdfcf7" stroke="#c55a11" stroke-width="3"/>
+<text x="885" y="451" font-size="28">사용량 · 결과 기록</text>
+<text x="885" y="487" font-size="24">미측정은 null</text>
+<rect x="355" y="410" width="295" height="100" rx="12" fill="#fdfcf7" stroke="#1f3864" stroke-width="3"/>
+<text x="502" y="451" font-size="25">원인 분리 · 사람 판단</text>
+<text x="502" y="487" font-size="22">범위 / 탐색 / 예산 부족</text>
+<path d="M710 460H650" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M355 460H188V395H897V370" fill="none" stroke="#1f3864" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="400" y="553" font-size="25">승인된 새 시도: 맥락 보강 · 필요한 예산 증가</text>
+<text x="720" y="608" font-size="25">멈춤은 로그·상태로 감시 · 종료된 실패의 무한 재시도 금지</text>
+<text x="720" y="643" font-size="22">실측 기반 운영 절차입니다. 자동 최적화 엔진·비용 절감률 보장은 아닙니다.</text>
+</g></svg>

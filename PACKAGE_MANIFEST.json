@@ -2,9 +2,12 @@
   "manifest_version": "1.0.0",
   "package": "claude-code-control",
   "inventory_excludes": [
-    "PACKAGE_MANIFEST.json"
+    "PACKAGE_MANIFEST.json",
+    ".git/",
+    "__pycache__/",
+    ".pytest_cache/"
   ],
-  "file_count": 16,
+  "file_count": 18,
   "files": [
     {
       "path": "LICENSE",
@@ -14,15 +17,27 @@
     },
     {
       "path": "README.md",
-      "bytes": 3399,
+      "bytes": 18492,
       "mode": "0664",
-      "sha256": "16735cb950a593e09d14977a60cd200993b0a7b35e9eef17a3c6936f5dd3e9b0"
+      "sha256": "a255b400483bc29a8dd3fb66937f11f8377c9c38a3036615ff6ddf0a64f098a0"
     },
     {
       "path": "SKILL.md",
       "bytes": 18592,
       "mode": "0644",
       "sha256": "834c65be87f91db4ccbdaa7a89fc25d1a5265445233869971c13afe7235118d6"
+    },
+    {
+      "path": "assets/orchestrator-worker.svg",
+      "bytes": 3758,
+      "mode": "0664",
+      "sha256": "a2dcf2b0d76026b688e59bdb85cf124b956026496916b6e71891d5ce5a1b5436"
+    },
+    {
+      "path": "assets/task-budget.svg",
+      "bytes": 3944,
+      "mode": "0664",
+      "sha256": "d51d726db801a7d1ab89f3a9802fbff463158960fa08f73a2d8fc8f2686f9168"
     },
     {
       "path": "references/batch-collection-pattern.md",
